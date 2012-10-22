@@ -1,0 +1,125 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% remixed by Haney Maxwell 2012
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+\usepackage{xcolor}
+%\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large {\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+			    \textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Haney Maxwell}  & 425-327-2793\\
+15725 25th Dr SE &  hmrmaxwell@gmail.com \\
+Mill Creek, WA 98012 & github.com/hmrm\\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\resheading{Education}
+\begin{itemize}
+\item[]
+	\ressubheading{University of Chicago}{}{B.S., Computer Science (GPA: 3.66)}{expected June 2013}
+	\begin{itemize}
+                \resitem{Dean's List}
+		\resitem{Relevant courses: Introduction to Databases, Introduction to AI, Analysis in $R^n$, Algebra}
+                \resitem{Irrelevant courses: Ancient Philosophy, Strategy}
+		\end{itemize}
+\end{itemize}
+
+\resheading{Experience}
+\begin{itemize}
+\item[]
+	\ressubheading{U. of Chicago Computer Science Instructional Lab.}{}{Tutor}{April 2011 - Now}
+	\begin{itemize}
+		\resitem{Helped lab users}
+				     \resitem{Maintained backup system}
+                                     \resitem{Developed scheduling website}
+				     \end{itemize}
+
+\item[] 
+      \ressubheading{University of Chicago Math. Dept.}{}{VIGRE Course Assistant}{Sept. 2010 - June 2011}
+      \begin{itemize}
+		       \resitem{Tutored students in calculus}
+
+				      		      \resitem{Graded problem sets}
+											   \end{itemize}
+
+\item[]
+	\ressubheading{University of Chicago Math. Dept.}{}{VIGRE REU Participant}{June 2010 - Sept. 2010}
+	\begin{itemize}
+		\resitem{Researched persistent homology and finite topological spaces}
+				 \resitem{Assisted in teaching elementary java and adolescent psychology to Chicago public school teachers}
+										    \end{itemize}
+
+\end{itemize}
+
+\resheading{Projects}
+\begin{itemize}
+\item[]
+	\ressubheading{Anime Recommendation Engine}{}{Python, Numpy, Bash, Ruby}{August 2012 - Now}
+	\begin{itemize}
+		\resitem{Scraped ratings data}
+				\resitem{Implemented a basic SVD recommendation algorithm with KNN postprocessing}
+						  \resitem{\textit{In Progress}: Implementing Item-Item KNN and experimenting with different normalizations}
+								       \end{itemize}
+
+\item[]
+	\ressubheading{Shift Scheduling Website}{}{Rails, Ruby, jQuery, Javascript}{June 2012 - Now}
+	\begin{itemize}
+		\resitem{Employees enter their availabilities, which are collected and summarized}
+				  \resitem{\textit{In Progress}: Implementing an algorithm to automatically generate a schedule from the availabilities}
+				  \end{itemize}
+
+\end{itemize}
+
+\resheading{Languages}
+
+\begin{description}
+\item[One Year+:]
+C, Python, Bash, \LaTeX
+\item[Major Project+:]
+Haskell, Ruby, Rails, Javascript, Java
+\item[Messed around in:]
+Matlab, R, SPSS, Clojure
+\end{description}
+
+\end{document}
