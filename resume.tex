@@ -71,28 +71,33 @@
 \item[]
   \ressubheading{Box}{}{Senior Software Engineer - Services Team}{September 2014 - Ongoing}
   \begin{itemize}
-    \resitem{Revamped our core Scala service framework libraries}
+    \resitem{Core Scala service-framework library improvements}
+    \begin{itemize}
+      \resitem{Refactored monolithic service framework to \`{a} la carte components}
+      \resitem{Added testing to vast swathes of untested core framework code}
+    \end{itemize}
     \resitem{Configured and deployed Kubernetes cluster management framework}
-    \resitem{Reworked our monitoring pipeline}
+    \resitem{Reworked our production monitoring pipeline}
+    \begin{itemize}
+      \resitem{Built fault-tolerant distributed framework to run and alert on periodic checks against OpenTSDB-based metrics}
+      \resitem{Customized service framework for, and deployed, a new Scala-based log tailer}
+    \end{itemize}
   \end{itemize}
 \item[]
   \ressubheading{Box}{}{Software Engineer - Release and Deployment Team}{July 2013 - September 2014}
   \begin{itemize}
-    \resitem{Coordinated and ran daily releases}
-    \resitem{Added High Availability characteristics to existing configuration deployment systems}
-    \resitem{Revamped our core Scala configuration libraries}
+    \resitem{Coordinated and ran daily releases for the main Box web application}
+    \resitem{Modified legacy config deployment system to run active-active across multiple nodes for HA}
+    \resitem{Core Scala application configuration library improvements}
+    \begin{itemize}
+      \resitem{New library supporting hot-reloading built on RxJava}
+      \resitem{Supports easily changing config source (file, zoookeeper, etc.), and format}
+    \end{itemize}
   \end{itemize}
 \item[]
   \ressubheading{U. of Chicago Computer Science Instructional Lab.}{}{Tutor}{April 2011 - June 2013}
   \begin{itemize}
-    \resitem{Helped lab users with problems in languages ranging from Matlab to Haskell}
-    \resitem{Maintained backup system}
-    \resitem{Developed scheduling website}
-  \end{itemize}
-\item[]
-  \ressubheading{University of Chicago Math. Dept.}{}{VIGRE REU Participant}{June 2010 - Sept. 2010}
-  \begin{itemize}
-    \resitem{Researched persistent homology and finite topological spaces}
+    \resitem{Maintained backup system, built scheduling website, helped users with problems}
   \end{itemize}
   
 \end{itemize}
@@ -103,7 +108,7 @@
   \ressubheading{Anime Ratings Site}{}{Haskell}{Current}
   \begin{itemize}
     \resitem{Early stages; design complete and first component partially implemented}
-    \resitem{Plan: Allow ratings on multiple axes (e.g. Art, Action, Storyline, etc.), and provide links to existing reviewing and streaming sites.}
+    \resitem{Plan: Allow ratings on multiple axes (e.g. Art, Action, Storyline, etc.), and provide links to existing reviewing and streaming sites}
   \end{itemize}
 \item[]
   \ressubheading{Recommendation Engine}{}{Python, Numpy, Bash, Ruby, Scala}{August 2012 - August 2014}
@@ -115,14 +120,15 @@
 \end{itemize}
 
 \resheading{Languages}
-
-\begin{description}
-\item[Primary:]
-  Scala, Puppet
-\item[Some Experience With:]
-  Haskell, Go, Java, Bash, C, Node.js, Ruby, Python, PHP
-\item[Messed Around With:]
-  Clojure, Android, Rails, Javascript (client-side), \LaTeX, Matlab, R, SPSS
-\end{description}
-
+\begin{itemize}
+\item[]
+  \begin{itemize}
+    \resitem{Primary: Scala, Puppet}
+    \resitem{Secondary: Haskell, Go, Java, Bash, C, Node.js, Ruby, Python, PHP}
+    \resitem{Messed Around With: Clojure, Android, Rails, Javascript (client-side), \LaTeX, Matlab, R}
+  \end{itemize}
+\end{itemize}
 \end{document}
+
+
+
